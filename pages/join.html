@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+    />
+    <title>ANDO : 회원가입</title>
+    <link rel="stylesheet" href="/css/join.css" />
+    <style type="text/css">
+      @font-face {
+        font-family: "Pretendard-Regular";
+        src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+          format("woff");
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" class>
+      <header class="logo-wrap">
+        <img id="logo" src="/img/logo.png"/ alt="logo">
+      </header>
+      <div class="content">
+        <div class="login-wrap">
+          <div class="login-form-wrap">
+            <form action="/" method="POST" class="form">
+              <div class="login-box">
+                <input
+                  type="text"
+                  name="user_id"
+                  id="uid"
+                  required
+                  placeholder="User Name"
+                />
+                <input
+                  type="password"
+                  name="password"
+                  id="upw"
+                  required
+                  placeholder="Password"
+                />
+              </div>
+              <button type="submit" id="bt-login">
+                <span id="login-span">Login</span>
+              </button>
+            </form>
+          </div>
+          <div class="bt-wrap">
+            <button id="join-bt"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
