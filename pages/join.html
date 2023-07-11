@@ -2,10 +2,154 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+    />
+    <title>ANDO : 회원가입</title>
+    <link rel="stylesheet" href="/css/join.css" />
+    <link rel="apple-touch-icon-precomposed" href="#" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css"
+    />
+    <style>
+      .filebox input[type="file"] {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+
+      .filebox label {
+        display: inline-block;
+        padding: 0.5em 0.75em;
+        color: #999;
+        font-size: inherit;
+        line-height: normal;
+        vertical-align: middle;
+        background-color: #fdfdfd;
+        cursor: pointer;
+        border: 1px solid #ebebeb;
+        border-bottom-color: #e2e2e2;
+        border-radius: 0.25em;
+      }
+
+      /* named upload */
+      .filebox .upload-name {
+        display: inline-block;
+        padding: 0.5em 0.75em; /* label의 패딩값과 일치 */
+        font-size: inherit;
+        font-family: inherit;
+        line-height: normal;
+        vertical-align: middle;
+        background-color: #f5f5f5;
+        border: 1px solid #ebebeb;
+        border-bottom-color: #e2e2e2;
+        border-radius: 0.25em;
+        -webkit-appearance: none; /* 네이티브 외형 감추기 */
+        -moz-appearance: none;
+        appearance: none;
+      }
+    </style>
   </head>
   <body>
-    djwsdpfsf
+    <div class="container">
+      <header class="logo-wrap">
+        <img id="logo" src="/img/logo.png"/ alt="logo">
+      </header>
+      <div class="content">
+        <div class="join-wrap">
+          <form action="/" method="GET" class="form">
+            <div class="join-box">
+              <input
+                type="text"
+                name="user_id"
+                id="uid"
+                required
+                placeholder="User Name"
+                maxlength="30"
+              />
+              <br />
+              <input
+                type="text"
+                name="nick_name"
+                id="nickname"
+                required
+                placeholder="Nickname"
+                maxlength="8"
+              />
+              <br />
+              <input
+                type="password"
+                name="password1"
+                id="upw1"
+                required
+                placeholder="Password"
+                maxlength="30"
+              />
+              <br />
+              <input
+                type="password"
+                name="password2"
+                id="upw2"
+                required
+                placeholder="Password Check"
+                maxlength="30"
+              />
+              <br />
+              <input
+                type="email"
+                name="email_address"
+                id="uemail"
+                required
+                placeholder="E-mail"
+              />
+              <br />
+              <input
+                type="text"
+                name="school"
+                id="uschool"
+                required
+                placeholder="School name"
+              />
+              <br />
+              <div class="filebox">
+                <input
+                  class="upload-name"
+                  value="파일선택"
+                  disabled="disabled"
+                />
+                <label for="ex_filename">업로드</label>
+                <input type="file" id="ex_filename" class="upload-hidden" />
+              </div>
+            </div>
+            <button id="bt-join">
+              <span>Join</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        var fileTarget = $(".filebox .upload-hidden");
+
+        fileTarget.on("change", function () {
+          if (window.FileReader) {
+            var filename = $(this)[0].files[0].name;
+          } else {
+            var filename = $(this).val().split("/").pop().split("\\").pop();
+          }
+          $(this).siblings(".upload-name").val(filename);
+        });
+      });
+    </script>
   </body>
 </html>
