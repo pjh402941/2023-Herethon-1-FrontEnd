@@ -125,6 +125,9 @@ button#write-button {
   width: 69px;
   height: 69px;
   padding: 0;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
 }
 img#write-button-img {
   width: 28px;

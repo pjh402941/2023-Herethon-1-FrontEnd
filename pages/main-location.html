@@ -17,8 +17,10 @@
     <style>
       @media (hover: hover) {
         /* container 혹은 * 적용해주세요 */
-        .container {
+
+        html {
           width: 375px;
+          margin: 0 auto;
         }
       }
     </style>
@@ -72,6 +74,42 @@
           <div class="content">
             <section class="board-list">
               <!-- 여기 main-whitebox.html 추가 -->
+              <div class="box-wrap">
+                <div class="profile-img"><img /></div>
+                <div class="whitebox">
+                  <div class="profile-info-wrap">
+                    <span id="nickname">아이디</span>
+                    <span id="uschool">멋사여대</span>
+                  </div>
+                  <div class="main-content-wrap">
+                    <h1 id="content-title"></h1>
+                    <div class="location-wrap">
+                      <div class="departure-box">
+                        <span id="departure">용산구</span>
+                      </div>
+                      <img id="arrow" />
+                      <div class="arrival-box">
+                        <span id="arrival">ㅇㅇ구</span>
+                      </div>
+                    </div>
+                    <div class="time-wrap">
+                      <span id="time-label">출발 시각</span>
+                      <div id="time-box"><span id="time">00:00</span></div>
+                    </div>
+                  </div>
+                  <div class="side-content-wrap">
+                    <div class="recruitment-box">
+                      <span id="current-recruitment">1</span>
+                      <span id="slash">/</span>
+                      <span id="total-recruitment">4</span>
+                    </div>
+                    <div class="transportation-box">
+                      <span id="transportation">택시</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <> -->
             </section>
           </div>
         </div>
