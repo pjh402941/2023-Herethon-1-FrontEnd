@@ -15,46 +15,51 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css"
     />
     <style>
-      .filebox input[type="file"] {
+      input[type="file"] {
+        position: relative;
+      }
+      input[type="file"]::file-selector-button {
         position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0;
+        right: 0px;
+        width: 20px;
+        color: transparent;
       }
 
-      .filebox label {
-        display: inline-block;
-        padding: 0.5em 0.75em;
-        color: #999;
-        font-size: inherit;
-        line-height: normal;
-        vertical-align: middle;
-        background-color: #fdfdfd;
+      /* Faked label styles and icon */
+      input[type="file"]::before {
+        position: absolute;
+        pointer-events: none;
+        top: 13px;
+        right: 18px;
+        content: "Add";
+        color: #1c4747;
+        font-family: "Pretendard-Regular", sans-serif;
+        z-index: 2;
+      }
+
+      /* ------- From Step 1 ------- */
+
+      /* file upload button */
+      input[type="file"]::file-selector-button {
+        border-radius: 4px;
+        margin: 0;
+        width: 61px;
+        height: 22px;
         cursor: pointer;
-        border: 1px solid #ebebeb;
-        border-bottom-color: #e2e2e2;
-        border-radius: 0.25em;
+        background-color: white;
+        border: 1px solid #1c4747;
+        border-radius: 11px;
+        transition: background-color 200ms;
       }
 
-      /* named upload */
-      .filebox .upload-name {
-        display: inline-block;
-        padding: 0.5em 0.75em; /* label의 패딩값과 일치 */
-        font-size: inherit;
-        font-family: inherit;
-        line-height: normal;
-        vertical-align: middle;
-        background-color: #f5f5f5;
-        border: 1px solid #ebebeb;
-        border-bottom-color: #e2e2e2;
-        border-radius: 0.25em;
-        -webkit-appearance: none; /* 네이티브 외형 감추기 */
-        -moz-appearance: none;
-        appearance: none;
+      /* file upload button hover state */
+      input[type="file"]::file-selector-button:hover {
+        background-color: #f3f4f6;
+      }
+
+      /* file upload button active state */
+      input[type="file"]::file-selector-button:active {
+        background-color: #e5e7eb;
       }
     </style>
   </head>
@@ -119,24 +124,16 @@
                 placeholder="School name"
               />
               <br />
-              <div class="filebox">
-                <input
-                  class="upload-name"
-                  value="파일선택"
-                  disabled="disabled"
-                />
-                <label for="ex_filename">업로드</label>
-                <input type="file" id="ex_filename" class="upload-hidden" />
-              </div>
+              <input type="file" />
             </div>
-            <button id="bt-join">
+
+            <button id="bt-join" type="submit" value="submit">
               <span>Join</span>
             </button>
           </form>
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="/js/img-upload.js"></script>
+    <script></script>
   </body>
 </html>
