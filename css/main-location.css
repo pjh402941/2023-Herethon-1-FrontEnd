@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+}
+.container {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header.hd {
+  padding-bottom: 10px;
+  background-color: #72a7a8;
+}
+.top-header-wrap {
+  padding-top: 10px;
+}
+#logo {
+  width: 102px;
+}
+.logo-wrap {
+  position: relative;
+}
+img#mypage {
+  position: absolute;
+  top: 17px;
+  right: 5%;
+  width: 26px;
+}
+
+.select-wrap {
+  margin-top: 24px;
+}
+.select-box,
+#location-select,
+#univ-select {
+  display: inline-block;
+}
+.select-box {
+  box-sizing: border-box;
+  width: 291px;
+  height: 35px;
+  position: relative;
+  background-color: #f6f6f6;
+  border-radius: 22.5px;
+  box-shadow: 0px 9px 5px -4px #567e7f;
+}
+div#location-select {
+  font-size: 13px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #285f60;
+  padding: 9px 30px;
+  border-radius: 22.5px;
+  color: #f6f6f6;
+  font-weight: bold;
+}
+div#univ-select {
+  position: absolute;
+  top: 9px;
+  right: 36px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.search-box {
+  margin: 0 auto;
+  position: relative;
+  width: 291px;
+  height: 35px;
+  border-radius: 22.5px;
+  margin-top: 13px;
+  border: 1px solid #f6f6f6;
+}
+img#search-img {
+  position: absolute;
+  left: 13px;
+  top: 10px;
+  width: 16px;
+}
+form.search-form {
+  position: absolute;
+}
+input#search {
+  width: 220px;
+  background-color: #72a7a8;
+  font-size: 11px;
+  margin-left: 24px;
+}
+input#search::placeholder {
+  color: #f6f6f6;
+}
+fieldset:focus,
+input:focus {
+  outline: none;
+  border: none;
+}
+img#fieldreset {
+  position: absolute;
+  right: 14px;
+  top: 13px;
+  width: 9px;
+}
+
+.border-radius-background {
+  position: relative;
+  background-color: #72a7a8;
+  height: 50px;
+}
+.content {
+  background-color: #f6f6f6;
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: absolute;
+  top: 177px;
+}
+
+button#write-button {
+  background-color: #72a7a8;
+  border: none;
+  border-radius: 50%;
+  width: 69px;
+  height: 69px;
+  padding: 0;
+}
+img#write-button-img {
+  width: 28px;
+}

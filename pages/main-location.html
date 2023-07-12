@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+    />
+    <title>ANDO : 위치</title>
+    <link rel="stylesheet" href="/css/main-location.css" />
+    <link rel="apple-touch-icon-precomposed" href="#" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <style>
+      @media (hover: hover) {
+        /* container 혹은 * 적용해주세요 */
+        .container {
+          width: 375px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flick-container">
+        <header class="hd">
+          <div class="top-header-wrap">
+            <div class="logo-wrap">
+              <img id="logo" src="/img/logo.png"/ alt="logo">
+            </div>
+            <img id="mypage" src="/img/mypage.png" alt="mypage" />
+          </div>
+          <div class="select-wrap">
+            <div class="select-box">
+              <div id="location-select">출발 지역 선택</div>
+              <div id="univ-select">멋사여자대학교</div>
+            </div>
+          </div>
+          <div class="search-wrap">
+            <div class="search-box">
+              <img id="search-img" src="/img/search.png" />
+              <form
+                action="#"
+                method="GET"
+                class="search-form"
+                style="border: none"
+              >
+                <fieldset style="border: none">
+                  <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    placeholder="출발지를 ‘ㅇㅇ동’으로 입력해보세요 !"
+                    style="border: none"
+                  />
+                  <button
+                    type="button"
+                    id="search-submit"
+                    style="display: none"
+                  ></button>
+                </fieldset>
+              </form>
+              <img id="fieldreset" src="/img/fieldreset.png" />
+            </div>
+          </div>
+        </header>
+        <div class="bd">
+          <div class="border-radius-background"></div>
+          <div class="content">
+            <section class="board-list">
+              <!-- 여기 main-whitebox.html 추가 -->
+            </section>
+          </div>
+        </div>
+      </div>
+      <button id="write-button" type="button">
+        <img id="write-button-img" src="/img/write.png" />
+      </button>
+    </div>
+    <script>
+      var input = document.getElementById("search");
+
+      input.addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.getElementById("search-submit").click();
+        }
+      });
+      var header = document.querySelector("header.hd");
+      var bd = document.querySelector(".bd");
+      var content = document.querySelector(".content");
+
+      function setBdHeight() {
+        var windowHeight = window.innerHeight;
+        var headerHeight = header.offsetHeight;
+        var bdHeight = windowHeight - headerHeight;
+
+        bd.style.height = bdHeight + "px";
+        content.style.height = bdHeight + "px";
+      }
+
+      setBdHeight();
+
+      window.addEventListener("resize", setBdHeight);
+    </script>
+  </body>
+</html>
