@@ -30,11 +30,19 @@ header.logo-wrap {
   margin-top: 14.58px;
 }
 input {
+  box-sizing: border-box;
   padding: 10px 5px;
   border: none;
   border-bottom: 1px solid #1c4747;
   font-size: 13px;
+  color: #333333;
   width: 303.5px;
+}
+input::placeholder {
+  font-weight: lighter;
+}
+input:not(:last-of-type) {
+  font-weight: bold;
 }
 input:not(:first-of-type) {
   margin-top: 21px;
