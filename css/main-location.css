@@ -230,7 +230,11 @@ h1#content-title {
   font-size: 13px;
   margin: 0px;
   text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
 .location-wrap {
   position: relative;
   width: 175px;
