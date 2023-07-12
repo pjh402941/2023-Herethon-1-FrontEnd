@@ -1,11 +1,28 @@
+@media (hover: hover) {
+  html {
+    width: 375px;
+    margin: 0 auto;
+  }
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   margin: 0;
+  font-family: "Pretendard-Regular";
 }
 .container {
   position: relative;
   height: 100%;
   margin: 0 auto;
   text-align: center;
+}
+.board-list {
+  overflow: auto;
 }
 
 header.hd {
@@ -46,6 +63,9 @@ img#mypage {
   box-shadow: 0px 9px 5px -4px #567e7f;
 }
 div#location-select {
+  box-sizing: border-box;
+  width: 146px;
+  height: 35px;
   font-size: 13px;
   position: absolute;
   left: 0px;
@@ -54,20 +74,19 @@ div#location-select {
   padding: 9px 30px;
   border-radius: 22.5px;
   color: #f6f6f6;
-  font-weight: bold;
 }
 div#univ-select {
   position: absolute;
   top: 9px;
   right: 36px;
   font-size: 13px;
-  font-weight: bold;
   color: #333333;
 }
 
 .search-box {
   margin: 0 auto;
   position: relative;
+  box-sizing: border-box;
   width: 291px;
   height: 35px;
   border-radius: 22.5px;
@@ -90,7 +109,7 @@ input#search {
   margin-left: 24px;
 }
 input#search::placeholder {
-  color: #f6f6f6;
+  color: #b0cccc;
 }
 fieldset:focus,
 input:focus {
@@ -131,4 +150,143 @@ button#write-button {
 }
 img#write-button-img {
   width: 28px;
+}
+
+.box-wrap {
+  margin: 11px 10%;
+  position: relative;
+  box-sizing: border-box;
+  height: 118px;
+}
+.profile-img-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+img#profile-img {
+  width: 44px;
+  border-radius: 50px;
+  padding-top: 3px;
+  position: relative;
+  z-index: 1;
+}
+.whitebox {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 61%;
+  left: 50%;
+  width: 100%;
+  height: 93px;
+  display: flex;
+  flex-direction: row;
+}
+.whitebox {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 61%;
+  left: 50%;
+  width: 100%;
+  height: 93px;
+  background-color: #ffffff;
+  border-radius: 9px;
+}
+
+.profile-info-wrap {
+  width: 23%;
+  padding-top: 33px;
+  text-align: center;
+}
+span#nickname {
+  font-size: 10px;
+  display: block;
+}
+span#uschool {
+  font-size: 7px;
+}
+
+.main-content-wrap {
+  box-sizing: content-box;
+  width: 60%;
+  margin: 0px;
+  margin-top: 11px;
+  padding-left: 4%;
+}
+h1#content-title {
+  font-size: 13px;
+  margin: 0px;
+  text-align: left;
+}
+.location-wrap {
+  position: relative;
+  width: 175px;
+  height: 19px;
+  margin: 0px;
+  margin-top: 9px;
+}
+.departure-box,
+.arrival-box {
+  position: absolute;
+  box-sizing: border-box;
+  width: 56px;
+  height: 19px;
+  background-color: #285f60;
+  color: #f6f6f6;
+  font-size: 9px;
+  padding-top: 4px;
+  border-radius: 9.5px;
+}
+img#arrow {
+  position: absolute;
+  width: 22px;
+  top: 6px;
+  left: 74px;
+}
+.arrival-box {
+  top: 0px;
+  left: 114px;
+  background-color: #72a7a8;
+}
+.time-wrap {
+  position: relative;
+  width: 175px;
+  height: 20px;
+  margin: 0px;
+  margin-top: 11px;
+}
+span#time-label {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: 7px;
+  margin-top: 2px;
+}
+div#time-box {
+  position: absolute;
+  left: 47px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.side-content-wrap {
+  box-sizing: content-box;
+  width: 30%;
+  margin-top: 9px;
+}
+.recruitment-box {
+  font-weight: bold;
+  font-size: 18px;
+}
+.transportation-box {
+  position: absolute;
+  box-sizing: border-box;
+  width: 46px;
+  right: 7%;
+  margin-top: 37px;
+  color: #285f60;
+  font-size: 9px;
+  border: 1px solid #72a7a8;
+  padding: 3px 9px;
+  border-radius: 11px;
 }
