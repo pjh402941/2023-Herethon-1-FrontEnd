@@ -9,6 +9,9 @@ body {
   margin: 0;
   font-family: "Pretendard-Regular";
 }
+span {
+  font-family: "Pretendard-Regular";
+}
 .container {
   position: relative;
   height: 100%;

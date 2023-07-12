@@ -9,6 +9,9 @@ body {
   margin: 0;
   font-family: "Pretendard-Regular";
 }
+span {
+  font-family: "Pretendard-Regular";
+}
 .container {
   position: relative;
   height: 100%;
@@ -23,10 +26,15 @@ header.logo-wrap {
   width: 102px;
 }
 
+.login-box {
+  width: 303.5px;
+  margin: 0 auto;
+}
 .login-form-wrap {
   padding-top: 41.58px;
 }
 input {
+  box-sizing: border-box;
   padding: 10px 5px;
   border: none;
   border-bottom: 1px solid #1c4747;
@@ -36,8 +44,15 @@ input {
 input#upw {
   margin-top: 21px;
 }
+div#forgot {
+  text-align: right;
+  font-size: 10px;
+  color: #333333;
+  width: 303.5px;
+  margin: 10px auto 0;
+}
 button#bt-login {
-  margin-top: 116px;
+  margin-top: 94px;
   width: 236px;
   height: 48px;
   border: none;

@@ -137,19 +137,6 @@
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script>
-      $(document).ready(function () {
-        var fileTarget = $(".filebox .upload-hidden");
-
-        fileTarget.on("change", function () {
-          if (window.FileReader) {
-            var filename = $(this)[0].files[0].name;
-          } else {
-            var filename = $(this).val().split("/").pop().split("\\").pop();
-          }
-          $(this).siblings(".upload-name").val(filename);
-        });
-      });
-    </script>
+    <script src="/js/img-upload.js"></script>
   </body>
 </html>
