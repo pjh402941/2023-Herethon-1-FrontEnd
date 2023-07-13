@@ -10,6 +10,7 @@
     format("woff");
   font-weight: 400;
   font-style: normal;
+  color: #333333;
 }
 body {
   margin: 0;
@@ -90,10 +91,44 @@ span#profile-select {
   margin: auto;
   text-align: left;
   font-weight: bold;
+  position: relative;
 }
 .info:not(:first-of-type) {
   margin-top: 21px;
 }
+img.verified {
+  position: absolute;
+  right: 0px;
+}
+#new-input {
+  box-sizing: border-box;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 1px solid #1c4747;
+  font-size: 13px;
+  color: #333333;
+  width: 303.5px;
+  margin: auto;
+  text-align: left;
+  font-weight: bold;
+  position: relative;
+  margin-top: 21px;
+}
+#new-input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #1c4747;
+}
+/* 인증되지 않은 사용자 */
+/* img.verified {
+  display: none;
+}
+.unverified {
+  position: absolute;
+  right: 0px;
+  color: red;
+} */
+
 button#bt-save {
   margin-top: 58px;
   box-sizing: content-box;

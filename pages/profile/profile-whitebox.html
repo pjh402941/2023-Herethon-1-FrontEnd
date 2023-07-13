@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
     />
-    <title>main-whitebox</title>
+    <title>profile-whitebox</title>
     <style>
       @media (hover: hover) {
         html {
@@ -25,58 +25,18 @@
       body {
         margin: 0;
         font-family: "Pretendard-Regular";
-        position: relative;
-        height: 100%;
-        margin: 0 auto;
-        text-align: center;
-      }
-      .box-wrap {
-        margin: 11px 10%;
-        position: relative;
-        box-sizing: border-box;
-        height: 118px;
-      }
-      .profile-img-box {
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
-        background-color: white;
-        position: relative;
-        z-index: 1;
-        box-shadow: 0px 9px 5px -4px #b8b8b8;
-      }
-      img#profile-img {
-        width: 44px;
-        border-radius: 50px;
-        padding-top: 3px;
-        position: relative;
-        z-index: 1;
       }
       .whitebox {
         display: flex;
         flex-direction: row;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 61%;
-        left: 50%;
-        width: 100%;
+        margin: 14px 10%;
+        position: relative;
+        box-sizing: border-box;
+        width: 80%;
         height: 93px;
         background-color: #ffffff;
         border-radius: 9px;
-        box-shadow: 0px 9px 5px -4px #b8b8b8;
-      }
-
-      .profile-info-wrap {
-        width: 23%;
-        padding-top: 33px;
-        text-align: center;
-      }
-      span#nickname {
-        font-size: 10px;
-        display: block;
-      }
-      span#uschool {
-        font-size: 7px;
+        box-shadow: 0px 2px 2px 2px #dadada;
       }
 
       .main-content-wrap {
@@ -84,7 +44,7 @@
         width: 60%;
         margin: 0px;
         margin-top: 11px;
-        padding-left: 4%;
+        padding-left: 10%;
       }
       h1#content-title {
         font-size: 13px;
@@ -113,6 +73,7 @@
         font-size: 9px;
         padding-top: 4px;
         border-radius: 9.5px;
+        text-align: center;
       }
       img#arrow {
         position: absolute;
@@ -169,40 +130,31 @@
     </style>
   </head>
   <body>
-    <div class="box-wrap">
-      <div class="profile-img-box">
-        <img id="profile-img" src="/img/profile.jpg" />
+    <div class="whitebox">
+      <div class="main-content-wrap">
+        <h1 id="content-title">동을 포함한 상세주소를 적</h1>
+        <div class="location-wrap">
+          <div class="departure-box">
+            <span id="departure">용산구</span>
+          </div>
+          <img id="arrow" src="/img/arrow.png" width="22px" />
+          <div class="arrival-box">
+            <span id="arrival">ㅇㅇ구</span>
+          </div>
+        </div>
+        <div class="time-wrap">
+          <span id="time-label">출발 시각</span>
+          <div id="time-box"><span id="time">00:00</span></div>
+        </div>
       </div>
-      <div class="whitebox">
-        <div class="profile-info-wrap">
-          <span id="nickname">아이디</span>
-          <span id="uschool">멋사여대</span>
+      <div class="side-content-wrap">
+        <div class="recruitment-box">
+          <span id="current-recruitment">1</span>
+          <span id="slash">/</span>
+          <span id="total-recruitment">4</span>
         </div>
-        <div class="main-content-wrap">
-          <h1 id="content-title">동을포함한상세주소를적어볼까요ddydyydydy</h1>
-          <div class="location-wrap">
-            <div class="departure-box">
-              <span id="departure">용산구</span>
-            </div>
-            <img id="arrow" src="/img/arrow.png" />
-            <div class="arrival-box">
-              <span id="arrival">ㅇㅇ구</span>
-            </div>
-          </div>
-          <div class="time-wrap">
-            <span id="time-label">출발 시각</span>
-            <div id="time-box"><span id="time">00:00</span></div>
-          </div>
-        </div>
-        <div class="side-content-wrap">
-          <div class="recruitment-box">
-            <span id="current-recruitment">1</span>
-            <span id="slash">/</span>
-            <span id="total-recruitment">4</span>
-          </div>
-          <div class="transportation-box">
-            <span id="transportation">지하철</span>
-          </div>
+        <div class="transportation-box">
+          <span id="transportation">택시</span>
         </div>
       </div>
     </div>

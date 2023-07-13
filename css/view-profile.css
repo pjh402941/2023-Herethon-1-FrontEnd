@@ -113,32 +113,9 @@ span#school-verified {
   color: #1c4747;
   font-weight: 550;
 }
-/* 인증이 필요한 사용자
-span#school-unverified {
-  position: absolute;
-  box-sizing: border-box;
-  padding-top: 1px;
-  width: 49px;
-  height: 15px;
-  top: 10px;
-  left: 203px;
-  border: 1px solid red;
-  border-radius: 8.5px;
-  font-size: 8px;
-  color: red;
-  font-weight: 550;
-} */
 span#uemail {
   padding-top: 9px;
   font-size: 15px;
-}
-span#profile-edit {
-  display: block;
-  text-align: right;
-  font-size: 10px;
-  position: absolute;
-  top: 197px;
-  right: 7px;
 }
 
 section.history-sec {

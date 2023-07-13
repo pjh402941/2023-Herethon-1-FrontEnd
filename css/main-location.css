@@ -10,6 +10,7 @@
     format("woff");
   font-weight: 400;
   font-style: normal;
+  color: #333333;
 }
 body,
 select {
@@ -79,7 +80,16 @@ img#mypage {
   background-color: #285f60;
   color: #f6f6f6;
   border: none;
-  width: 100px;
+  width: 146px;
+  height: 35px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+  border-radius: 22.5px;
+  -webkit-appearance: none; /* 크롬 화살표 없애기 */
+  -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
+  appearance: none; /* 화살표 없애기 */
 }
 #location-select:focus {
   border: none;
