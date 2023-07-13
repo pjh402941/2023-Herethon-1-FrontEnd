@@ -26,165 +26,125 @@ body {
 }
 
 header.hd {
-  padding-bottom: 10px;
-  background-color: #72a7a8;
-}
-.top-header-wrap {
-  padding-top: 10px;
-}
-#logo {
-  width: 102px;
-}
-.logo-wrap {
-  position: relative;
-}
-img#mypage {
-  position: absolute;
-  top: 17px;
-  right: 5%;
-  width: 26px;
-}
-
-.select-wrap {
-  margin-top: 24px;
-}
-.select-box,
-#location-select,
-#univ-select {
-  display: inline-block;
-}
-.select-box {
+  height: 48px;
+  border-bottom: 1px solid #b3b3b3;
   box-sizing: border-box;
-  width: 291px;
-  height: 35px;
-  position: relative;
-  background-color: #f6f6f6;
-  border-radius: 22.5px;
-  box-shadow: 0px 9px 5px -4px #567e7f;
+  padding-top: 14px;
 }
-div#location-select {
-  box-sizing: border-box;
-  width: 146px;
-  height: 35px;
-  font-size: 13px;
+img#back {
   position: absolute;
-  left: 0px;
-  top: 10px;
+  left: 29.25px;
 }
-div#univ-select {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  box-sizing: border-box;
-  width: 152px;
-  font-size: 13px;
-  background-color: #285f60;
-  color: #f6f6f6;
-  padding: 10px 30px;
-  border-radius: 22.5px;
-}
-
-.search-box {
-  margin: 0 auto;
-  position: relative;
-  box-sizing: border-box;
-  width: 291px;
-  height: 35px;
-  border-radius: 22.5px;
-  margin-top: 13px;
-  border: 1px solid #f6f6f6;
-}
-img#search-img {
-  position: absolute;
-  left: 13px;
-  top: 10px;
-  width: 16px;
-}
-form.search-form {
-  position: absolute;
-}
-input#search {
-  width: 220px;
-  background-color: #72a7a8;
-  font-size: 11px;
-  margin-left: 24px;
+span#header-title {
+  font-size: 17px;
   font-weight: bold;
-  color: white;
-}
-input#search::placeholder {
-  color: #b0cccc;
-}
-fieldset:focus,
-input:focus {
-  outline: none;
-  border: none;
-}
-img#fieldreset {
-  position: absolute;
-  right: 14px;
-  top: 13px;
-  width: 9px;
 }
 
-.border-radius-background {
-  position: relative;
-  background-color: #72a7a8;
-  height: 50px;
-}
-.content {
-  background-color: #f6f6f6;
-  width: 100%;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  position: absolute;
-  top: 177px;
-}
-
-button#write-button {
-  background-color: #72a7a8;
-  border: none;
-  border-radius: 50%;
-  width: 69px;
-  height: 69px;
-  padding: 0;
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-}
-img#write-button-img {
-  width: 28px;
-}
-
-.box-wrap {
-  margin: 11px 10%;
-  position: relative;
+section.profile-sec {
   box-sizing: border-box;
-  height: 118px;
+  height: 252px;
+  padding: 24px 38px 19px;
+}
+.profile-box-wrap {
+  width: 300px;
+  height: 190px;
+  position: relative;
+  margin: 0 auto;
 }
 .profile-img-box {
-  width: 50px;
-  height: 50px;
+  width: 71px;
+  height: 71px;
+  position: relative;
   border-radius: 50px;
   background-color: white;
-  position: relative;
   z-index: 1;
-  box-shadow: 0px 9px 5px -4px #b8b8b8;
+  box-shadow: 0px 2px 2px 2px #f6f6f6;
+  margin: auto;
 }
 img#profile-img {
-  width: 44px;
+  width: 63px;
   border-radius: 50px;
-  padding-top: 3px;
+  padding-top: 4px;
   position: relative;
   z-index: 1;
 }
+.profile-whitebox {
+  position: absolute;
+  top: 36px;
+  width: 100%;
+  height: 154px;
+  box-shadow: 0px 2px 2px 2px #f6f6f6;
+  border-radius: 8px;
+}
+span#nickname,
+#uemail {
+  display: block;
+}
+span#nickname:first-child {
+  display: block;
+  padding-top: 45px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333333;
+}
+.verify-box {
+  width: 100%;
+  height: 19px;
+  position: relative;
+  padding-top: 9px;
+}
+span#uschool:first-child {
+  position: absolute;
+  left: 104px;
+  font-size: 15px;
+}
+span#school-verified {
+  position: absolute;
+  box-sizing: border-box;
+  padding-top: 1px;
+  width: 49px;
+  height: 15px;
+  top: 10px;
+  left: 203px;
+  border: 1px solid #1c4747;
+  border-radius: 8.5px;
+  font-size: 8px;
+  color: #1c4747;
+  font-weight: 550;
+}
+span#uemail {
+  padding-top: 9px;
+  font-size: 15px;
+}
+span#profile-edit {
+  display: block;
+  text-align: right;
+  font-size: 10px;
+  position: absolute;
+  top: 197px;
+  right: 7px;
+}
+
+section.history-sec {
+  height: 80%;
+  background-color: #f6f6f6;
+}
+div#history-sec-hd {
+  margin-left: 10%;
+  text-align: left;
+  margin-top: 21px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 .whitebox {
   display: flex;
   flex-direction: row;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 61%;
-  left: 50%;
-  width: 100%;
+  margin: 14px 10%;
+  position: relative;
+  box-sizing: border-box;
+  width: 80%;
   height: 93px;
   background-color: #ffffff;
   border-radius: 9px;
@@ -209,7 +169,7 @@ span#uschool {
   width: 60%;
   margin: 0px;
   margin-top: 11px;
-  padding-left: 4%;
+  padding-left: 10%;
 }
 h1#content-title {
   font-size: 13px;
@@ -219,6 +179,7 @@ h1#content-title {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .location-wrap {
   position: relative;
   width: 175px;
