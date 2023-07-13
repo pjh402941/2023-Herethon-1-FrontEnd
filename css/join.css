@@ -47,6 +47,9 @@ input:not(:last-of-type) {
 input:not(:first-of-type) {
   margin-top: 21px;
 }
+input#uemail {
+  margin-top: 0px;
+}
 button#bt-join {
   margin-top: 30px;
   width: 236px;
@@ -56,4 +59,13 @@ button#bt-join {
   font-size: 18px;
   color: white;
   border-radius: 50px;
+}
+
+div#same {
+  text-align: left;
+  color: red;
+  width: 303.5px;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 13px;
 }
