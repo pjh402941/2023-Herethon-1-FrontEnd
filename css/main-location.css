@@ -32,6 +32,14 @@ header.hd {
 .top-header-wrap {
   padding-top: 10px;
 }
+img#back {
+  position: absolute;
+  left: 16px;
+  top: 20.25px;
+  color: white;
+  filter: invert(99%) sepia(4%) saturate(501%) hue-rotate(273deg)
+    brightness(114%) contrast(93%);
+}
 #logo {
   width: 102px;
 }
@@ -108,7 +116,7 @@ div#univ-select {
   width: 291px;
   height: 35px;
   border-radius: 22.5px;
-  margin-top: 13px;
+  margin-top: 17px;
   border: 1px solid #f6f6f6;
 }
 img#search-img {
@@ -146,10 +154,14 @@ img#fieldreset {
 .border-radius-background {
   position: relative;
   background-color: #72a7a8;
-  height: 50px;
+  height: 100px;
 }
 .board-list {
   background-color: #f6f6f6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding-top: 12px;
+  margin-top: 25px;
 }
 .content {
   width: 100%;
@@ -168,14 +180,14 @@ button#write-button {
   padding: 0;
   position: fixed;
   bottom: 16px;
-  right: 16px;
+  right: 20px;
 }
 img#write-button-img {
   width: 28px;
 }
 
 .box-wrap {
-  margin: 11px 10%;
+  margin: 8.5px 10%;
   position: relative;
   box-sizing: border-box;
   height: 118px;
