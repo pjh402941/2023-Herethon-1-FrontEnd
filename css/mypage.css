@@ -24,6 +24,7 @@ body {
 }
 .content {
   overflow: auto;
+  background-color: #f6f6f6;
 }
 
 header.hd {
@@ -45,6 +46,7 @@ section.profile-sec {
   box-sizing: border-box;
   height: 252px;
   padding: 24px 38px 19px;
+  background-color: white;
 }
 .profile-box-wrap {
   width: 300px;
@@ -113,8 +115,8 @@ span#school-verified {
   color: #1c4747;
   font-weight: 550;
 }
-/* 인증이 필요한 사용자
-span#school-unverified {
+/* 인증이 필요한 사용자 */
+/* span#school-unverified {
   position: absolute;
   box-sizing: border-box;
   padding-top: 1px;
@@ -143,7 +145,6 @@ span#profile-edit {
 
 section.history-sec {
   height: 80%;
-  background-color: #f6f6f6;
 }
 div#history-sec-hd {
   margin-left: 10%;

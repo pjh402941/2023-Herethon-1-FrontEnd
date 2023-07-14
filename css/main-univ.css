@@ -21,8 +21,6 @@ body {
   height: 100%;
   margin: 0 auto;
   text-align: center;
-}
-.content {
   overflow: auto;
 }
 
@@ -132,8 +130,10 @@ img#fieldreset {
   background-color: #72a7a8;
   height: 50px;
 }
-.content {
+.board-list {
   background-color: #f6f6f6;
+}
+.content {
   width: 100%;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
