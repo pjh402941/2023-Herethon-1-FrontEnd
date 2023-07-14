@@ -142,8 +142,7 @@ img#fieldreset {
   background-color: #f6f6f6;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  padding-top: 12px;
-  margin-top: 25px;
+  padding-top: 25px;
 }
 .content {
   width: 100%;
@@ -151,6 +150,7 @@ img#fieldreset {
   border-top-right-radius: 50px;
   position: absolute;
   top: 177px;
+  margin-top: 15px;
 }
 
 button#write-button {

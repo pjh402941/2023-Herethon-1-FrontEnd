@@ -15,7 +15,13 @@
       <div class="flick-container">
         <header class="hd">
           <div class="top-header-wrap">
-            <img id="back" src="/img/back.png" alt="back" width="17.5px" />
+            <img
+              id="back"
+              src="/img/back.png"
+              alt="back"
+              width="17.5px"
+              onclick="goBack()"
+            />
             <div class="logo-wrap">
               <img id="logo" src="/img/logo.png"/ alt="logo">
             </div>
@@ -23,7 +29,9 @@
           </div>
           <div class="select-wrap">
             <div class="select-box">
-              <div id="location-select">출발 지역 선택&nbsp&nbsp ▼</div>
+              <div id="location-select" onclick="goToMainPage()">
+                출발 지역 선택&nbsp&nbsp ▼
+              </div>
               <div id="univ-select">멋사여자대학교</div>
             </div>
           </div>
@@ -267,5 +275,6 @@
       </button>
     </div>
     <script src="/js/content-height.js"></script>
+    <script src="/js/navigateTo/to-main-page.js"></script>
   </body>
 </html>

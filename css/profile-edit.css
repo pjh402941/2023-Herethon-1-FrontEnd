@@ -138,6 +138,9 @@ img.verified {
   margin-top: 20px;
   color: #333333;
 }
+div#reupload-preview {
+  margin-top: 10px;
+}
 button#bt-save {
   margin-top: 58px;
   box-sizing: content-box;

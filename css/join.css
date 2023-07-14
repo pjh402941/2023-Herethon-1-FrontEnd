@@ -54,7 +54,7 @@ input:not(:last-of-type) {
 input:not(:first-of-type) {
   margin-top: 21px;
 }
-input:last-child {
+input#reupload {
   margin-top: 0px;
 }
 input#uemail {
@@ -68,6 +68,9 @@ input#uemail {
   margin: auto;
   margin-top: 20px;
   color: #333333;
+}
+div#reupload-preview {
+  margin-top: 10px;
 }
 button#bt-join {
   margin-top: 30px;
@@ -85,6 +88,5 @@ div#same {
   color: red;
   width: 303.5px;
   margin: 0 auto;
-  margin-top: 10px;
   font-size: 13px;
 }

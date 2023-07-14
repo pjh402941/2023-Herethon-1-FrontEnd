@@ -44,18 +44,21 @@
                 />
               </div>
               <div id="forgot">Forget Password ?</div>
-              <button type="submit" id="bt-login">
+              <button type="submit" id="bt-login" onclick="goToMainPage()">
                 <span id="login-span">Login</span>
               </button>
             </form>
           </div>
           <div class="bt-wrap">
             <button id="join-bt">
-              <span id="join-span">Join Us!</span>
+              <span id="join-span" onclick="goToJoinPage()">Join Us!</span>
             </button>
           </div>
         </div>
       </div>
     </div>
+    <script src="/js/navigateTo/to-join-page.js"></script>
+    <script src="/js/navigateTo/to-main-page.js"></script>
+    <script src="/js/navigateTo/go-back.js"></script>
   </body>
 </html>

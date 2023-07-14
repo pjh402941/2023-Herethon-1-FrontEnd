@@ -129,7 +129,12 @@
               />
               <br />
               <span id="file-title">School Photo</span>
-              <input type="file" />
+              <input
+                type="file"
+                onchange="setImageFn(this, 'reupload', 'reupload-preview')"
+                id="reupload"
+              />
+              <div id="reupload-preview"></div>
             </div>
 
             <button id="bt-join" type="submit" value="submit">
@@ -140,5 +145,7 @@
       </div>
     </div>
     <script src="/js/password-check.js"></script>
+    <script src="/js/join-preview-file.js"></script>
+    <script src="/js/navigateTo/go-back.js"></script>
   </body>
 </html>
