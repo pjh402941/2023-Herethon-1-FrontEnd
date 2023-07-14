@@ -13,7 +13,13 @@
   <body>
     <div class="container">
       <header class="hd">
-        <img id="back" src="/img/back.png" alt="back" width="17.5px" />
+        <img
+          id="back"
+          src="/img/back.png"
+          alt="back"
+          width="17.5px"
+          onclick="goBack()"
+        />
         <span id="header-title">프로필</span>
       </header>
 
@@ -34,7 +40,9 @@
                 </div>
                 <span id="uemail">hungrylion@likelion.net</span>
               </div>
-              <span id="profile-edit">프로필 수정하기</span>
+              <span id="profile-edit" onclick="goToEditPage()"
+                >프로필 수정하기</span
+              >
             </div>
           </section>
 
@@ -254,5 +262,7 @@
       </div>
     </div>
     <script src="/js/content-height.js"></script>
+    <script src="/js/navigateTo/to-edit-page.js"></script>
+    <script src="/js/navigateTo/go-back.js"></script>
   </body>
 </html>

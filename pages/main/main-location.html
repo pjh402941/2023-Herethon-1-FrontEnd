@@ -15,7 +15,13 @@
       <div class="flick-container">
         <header class="hd">
           <div class="top-header-wrap">
-            <img id="back" src="/img/back.png" alt="back" width="17.5px" />
+            <img
+              id="back"
+              src="/img/back.png"
+              alt="back"
+              width="17.5px"
+              onclick="goBack()"
+            />
             <div class="logo-wrap">
               <img id="logo" src="/img/logo.png"/ alt="logo">
             </div>
@@ -55,7 +61,9 @@
                   <option value="중랑구">중랑구</option>
                 </select>
               </div>
-              <div id="univ-select">멋사여자대학교</div>
+              <div id="univ-select" onclick="goToUnivPage()">
+                멋사여자대학교
+              </div>
             </div>
           </div>
           <div class="search-wrap">
@@ -298,5 +306,7 @@
     </div>
     <script src="/js/content-height.js"></script>
     <script src="/js/search-enterkey.js"></script>
+    <script src="/js/navigateTo/to-univ-page.js"></script>
+    <script src="/js/navigateTo/go-back.js"></script>
   </body>
 </html>

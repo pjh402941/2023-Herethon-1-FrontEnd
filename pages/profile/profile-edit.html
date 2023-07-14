@@ -86,7 +86,13 @@
   <body>
     <div class="container">
       <header class="hd">
-        <img id="back" src="/img/back.png" alt="back" width="17.5px" />
+        <img
+          id="back"
+          src="/img/back.png"
+          alt="back"
+          width="17.5px"
+          onclick="goBack()"
+        />
         <span id="header-title">프로필 수정</span>
       </header>
 
@@ -134,7 +140,12 @@
             />
             <div id="reupload-preview"></div>
           </div>
-          <button id="bt-save" type="submit" value="submit">
+          <button
+            id="bt-save"
+            type="submit"
+            value="submit"
+            onclick="goToMyPage()"
+          >
             <span>저장</span>
           </button>
         </form>
@@ -143,5 +154,7 @@
 
     <script src="/js/div change input.js"></script>
     <script src="/js/hide-previw.js"></script>
+    <script src="/js/navigateTo/go-back.js"></script>
+    <script src="/js/navigateTo/to-mypage.js"></script>
   </body>
 </html>
